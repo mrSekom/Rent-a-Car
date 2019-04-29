@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Castle.MicroKernel.Registration;
 using Castle.Windsor;
 
-namespace DataAccess
+namespace Business
 {
     public static class IOCUtil
     {
