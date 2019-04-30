@@ -62,10 +62,6 @@
       <Project>{cb91493a-5931-4607-8f21-07b83fc9d485}</Project>
       <Name>DataAccess</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Entity\Entities.csproj">
-      <Project>{4bbf272f-9d46-4d50-b0de-8627651ed463}</Project>
-      <Name>Entities</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Abstract\" />
