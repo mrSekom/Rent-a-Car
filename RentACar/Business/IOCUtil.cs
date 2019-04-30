@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using Castle.MicroKernel.Registration;
 using Castle.Windsor;
+using DataAccess.Abstract;
+using DataAccess.Concrete;
 
 namespace Business
 {
@@ -17,7 +19,13 @@ namespace Business
         {
             return new WindsorContainer().Register(
 
-                Component.For< /*interface*/ >().ImplementedBy< /* class */ >(),
+                Component.For<ICompanyDal>().ImplementedBy<CompanyDal>(),
+                Component.For<ICustomerDal>().ImplementedBy<CustomerDal>(),
+                Component.For<IRentalinformationDal>().ImplementedBy<RentalinformationDal>(),
+                Component.For<IRoleDal>().ImplementedBy<RoleDal>(),
+                Component.For<IUserDal>().ImplementedBy<UserDal>(),
+                Component.For<IVehicleInformationDal>().ImplementedBy<VehicleInformationDal>()
+
                 );
         }
 

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace DataAccess.Concrete
 {
-    class UserDal : EntityRepositoryBase<User, PostgresContext>, IUserDal
+    public class UserDal : EntityRepositoryBase<User, PostgresContext>, IUserDal
     {
     }
 }

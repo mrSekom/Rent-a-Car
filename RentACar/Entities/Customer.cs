@@ -16,7 +16,7 @@ namespace Entities
         public int TCNumber { get; set; }
 
         public virtual List<Rentalinformation> Rentalinformations { get; set; }
-        public virtual List<VehicleInformation> vehicleInformations { get; set; }
+        public virtual List<VehicleInformation> VehicleInformations { get; set; }
 
         public virtual Company Company { get; set; }
 

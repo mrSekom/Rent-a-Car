@@ -19,7 +19,8 @@ namespace DataAccess.Concrete
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            //optionsBuilder.UseNpgsql("Server=159.89.108.208;Port=5432;Database=hizli_ticaret;User Id=postgres;Password=esas10burda");
+            //alttaki .net core için. .net framework versiyonu gerekiyor.
+            //optionsBuilder.UseNpgsql("Server=159.89.108.208;Port=5432;Database=soa_proje;User Id=postgres;Password=esas10burda");
         }
     }
 }
